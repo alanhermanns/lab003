@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class= 'background'></div>
+    <span class = 'header'><h1>ROCK PAPER SCISSORS</h1></span>
+    <section class = 'choose'>
+        <label id="rockRock">
+            <input class = 'hidden' name="choice" value= "rock" type= "radio"  checked /> 
+            <img class ='radio-image' src ='rock.png'>
+        </label> 
+        <label id="paperPaper">
+            <input class = 'hidden' name="choice" value= "paper" type= "radio" /> 
+            <img class ='radio-image' src ='paper.jpeg'>
+        </label>
+        <label id="scissorsScissors">
+            <input class = 'hidden' name="choice" value= "scissors" type= "radio" /> 
+            <img class ='radio-image' src ='scissors.jpg'>
+        </label>
+    </section>
+    <br>
+    <br>
+    <div class = 'submit-button' id ='submit-button'>
+        <button>Submit</button>
+    </div>
+    <section>
+        <h3>Your Selection:<span id = 'your-item'></span></h3>
+        <h3>Comuter Selection:<span id = 'computer-item'></span></h3>
+    </section>
+    <div id= 'results'>
+
+    </div>
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>

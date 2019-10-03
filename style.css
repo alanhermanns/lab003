@@ -1,0 +1,36 @@
+.background {
+    background: black;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    font-size: 30px;
+    color: deeppink;
+}
+.choose{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+} 
+.radio-image {
+    width: 200px;
+    height: 200px;
+}
+.hidden {
+    display: none;
+}
+.chosen-one {
+    padding: 4px;
+    border-radius: 4px steelblue;
+}
+.submit-button {
+    display: flex;
+    justify-content: space-around;
+}
+button {
+    border: 5px solid black;
+    border-radius: 11%;
+    width: 150px;
+    height: 75px;
+}
