@@ -13,15 +13,15 @@
     <span class = 'header'><h1>ROCK PAPER SCISSORS</h1></span>
     <section class = 'choose'>
         <label id="rockRock">
-            <input class = 'hidden' name="choice" value= "rock" type= "radio"  checked /> 
+            <input  name="choice" value= "rock" type= "radio"  checked /> 
             <img class ='radio-image' src ='rock.png'>
         </label> 
         <label id="paperPaper">
-            <input class = 'hidden' name="choice" value= "paper" type= "radio" /> 
+            <input  name="choice" value= "paper" type= "radio" /> 
             <img class ='radio-image' src ='paper.jpeg'>
         </label>
         <label id="scissorsScissors">
-            <input class = 'hidden' name="choice" value= "scissors" type= "radio" /> 
+            <input  name="choice" value= "scissors" type= "radio" /> 
             <img class ='radio-image' src ='scissors.jpg'>
         </label>
     </section>
@@ -41,7 +41,9 @@
         <span id='draws'></span>
 
     </div>
-    <script type='module' src='app2.js'></script>
+    <script type='module' src='./app2.js'></script>
+    <script type='module' src='./test-results.js'></script>
+    <script type='module' src='./get-random-throw.js'></script>
 </body>
 
 </html>

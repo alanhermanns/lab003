@@ -35,13 +35,18 @@ const updateScore = () => {
     if (checkResult(playerChoice, computerChoice) === 'loss') {
         losses++;
     }
-}
+};
 
 //State
 const playGame = () => {
-    const thisGameResult = checkResult(playerChoice, computerChoice);
-    
+    selectAButton();
+    computerChoice = getRandomThrow();
     resultsArea.textContent = checkResult(playerChoice, computerChoice);
-}
+    updateScore();
+    winSpan.textContent = wins.value;
+    lossSpan.textContent = losses.value;
+    drawSpan.textContent = draws.value;
+};
 
 // event handler for button click
+submitButton.addEventListener('click', playGame);
