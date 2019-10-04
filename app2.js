@@ -38,12 +38,9 @@ const updateScore = () => {
 };
 
 const updateSpans = () => {
-    const winUpdate = wins.value;
-    winSpan.textContent = winUpdate;
-    const lossUpdate = losses.value;
-    lossSpan.textContent = lossUpdate; 
-    const drawUpdate = draws.value;
-    drawSpan.textContent = drawUpdate;
+    winSpan.textContent = wins;
+    lossSpan.textContent = losses; 
+    drawSpan.textContent = draws;
 };
 
 
@@ -54,12 +51,13 @@ const playGame = () => {
     resultsArea.textContent = checkResult(playerChoice, computerChoice);
     updateScore();
  //need to write update span method where we aren't changing constants
-    winSpan = wins.value;
-    lossSpan = losses.value;
-    drawSpan = draws.value;
-    console.log(wins);
-    console.log(losses);
-    console.log(draws);
+    updateSpans();
+    // winSpan = wins.value;
+    // lossSpan = losses.value;
+    // drawSpan = draws.value;
+    // console.log(wins);
+    // console.log(losses);
+    // console.log(draws);
 };
 
 // event handler for button click
