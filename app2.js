@@ -1,5 +1,5 @@
-import getRandomThrow from './get-random-throw.js/';
-import checkResult from './test-results.js/';
+import getRandomThrow from './get-random-throw.js';
+import checkResult from './test-results.js';
 
 //DOM Elemets
 const rock = document.getElementById('rockRock');
