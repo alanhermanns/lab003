@@ -34,12 +34,6 @@ const updateScore = () => {
     }
 };
 
-// const updateSelection = () => {
-//     if (rock
-
-//     }
-// }
-
 const updateSpans = () => {
     winSpan.textContent = wins;
     lossSpan.textContent = losses; 
