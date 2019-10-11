@@ -13,15 +13,15 @@
     <span class = 'header'><h1>ROCK PAPER SCISSORS</h1></span>
     <section class = 'choose'>
         <label id="rockRock">
-            <input class = 'hidden' name="choice" value= "rock" type= "radio"  checked /> 
+            <input  name="choice" value= "rock" type= "radio"  checked /> 
             <img class ='radio-image' src ='rock.png'>
         </label> 
         <label id="paperPaper">
-            <input class = 'hidden' name="choice" value= "paper" type= "radio" /> 
+            <input  name="choice" value= "paper" type= "radio" /> 
             <img class ='radio-image' src ='paper.jpeg'>
         </label>
         <label id="scissorsScissors">
-            <input class = 'hidden' name="choice" value= "scissors" type= "radio" /> 
+            <input  name="choice" value= "scissors" type= "radio" /> 
             <img class ='radio-image' src ='scissors.jpg'>
         </label>
     </section>
@@ -32,12 +32,18 @@
     </div>
     <section>
         <h3>Your Selection:<span id = 'your-item'></span></h3>
-        <h3>Comuter Selection:<span id = 'computer-item'></span></h3>
+        <h3>Computer Selection:<span id = 'computer-item'></span></h3>
     </section>
-    <div id= 'results'>
+    <div>
+        <h1 id= 'results'></h1>
+        <div>Wins:<span id = wins></span></div>
+        <div>Losses:<span id='losses'></span></div>
+       <div>Draws:<span id='draws'></span></div>
 
     </div>
-    <script type="module" src="app.js"></script>
+    <script type='module' src='./app2.js'></script>
+    <script type='module' src='./test-results.js'></script>
+    <script type='module' src='./get-random-throw.js'></script>
 </body>
 
 </html>
