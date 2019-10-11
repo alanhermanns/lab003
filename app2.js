@@ -44,8 +44,8 @@ const updateSpans = () => {
     winSpan.textContent = wins;
     lossSpan.textContent = losses; 
     drawSpan.textContent = draws;
-    yourItemArea.textContent =  " " + playerChoice;
-    compupterItemArea.textContent = " " +  computerChoice;
+    yourItemArea.textContent = ' ' + playerChoice;
+    compupterItemArea.textContent = ' ' + computerChoice;
 };
 
 
