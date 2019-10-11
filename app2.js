@@ -2,9 +2,6 @@ import getRandomThrow from './get-random-throw.js';
 import checkResult from './test-results.js';
 
 //DOM Elemets
-const rock = document.getElementById('rockRock');
-const paper = document.getElementById('paperPaper');
-const scissors = document.getElementById('scissorsScissors');
 const yourItemArea = document.getElementById('your-item');
 const compupterItemArea = document.getElementById('computer-item');
 const resultsArea = document.getElementById('results');
@@ -37,10 +34,18 @@ const updateScore = () => {
     }
 };
 
+// const updateSelection = () => {
+//     if (rock
+
+//     }
+// }
+
 const updateSpans = () => {
     winSpan.textContent = wins;
     lossSpan.textContent = losses; 
     drawSpan.textContent = draws;
+    yourItemArea.textContent =  " " + playerChoice;
+    compupterItemArea.textContent = " " +  computerChoice;
 };
 
 
